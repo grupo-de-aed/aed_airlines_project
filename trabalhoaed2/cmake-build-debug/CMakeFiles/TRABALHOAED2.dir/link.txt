@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/TRABALHOAED2.dir/main.cpp.o CMakeFiles/TRABALHOAED2.dir/code/Menu.cpp.o -o TRABALHOAED2 
