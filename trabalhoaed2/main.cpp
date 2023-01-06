@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     try {
-        Menu loginMenu;
+        Menu mainMenu;
     }
     catch (std::ios_base::failure &fail) {
         Menu::Error(fail.what());

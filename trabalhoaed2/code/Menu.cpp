@@ -61,8 +61,8 @@ void Menu::goBack() {
         catch (...) {
             back = 10;
         }
-        //if (back == 1) MainMenu();
-        //else if (back == 0) break;
+        if (back == 1) Menu();
+        else if (back == 0) break;
         cout << "> Invalid choice.\n"
                 "[1]> Back to Main Menu.\n"
                 "[0]> Quit.\n";
