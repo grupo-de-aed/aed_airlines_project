@@ -8,6 +8,7 @@
 #include "Menu.h"
 #include "Airport.cpp"
 
+//Main menu principal function
 Menu::Menu() {
     cout << "\n\n╒═════════════════════════════════════════════╕\n"
             "│                500 thousand                 │\n"
@@ -19,10 +20,11 @@ Menu::Menu() {
 
             "\n[0]> Quit\n";
 
+    //Select a topic in main menu
     int topic_in_main_menu;
     string striTemp;
-
     while (true) {
+        //Prevent errors in the program
         topic_in_main_menu = 0;
         striTemp = "";
         cin >> striTemp;
@@ -34,7 +36,7 @@ Menu::Menu() {
         }
 
 
-        //topic selection
+        //Topics
         if (topic_in_main_menu == 1) {
 
 
@@ -42,13 +44,21 @@ Menu::Menu() {
         else if (topic_in_main_menu == 2) {
             Airport::getAllAirports();
         }
+
+
+        //Stop the program
+        else if (topic_in_main_menu == 0) break;
+        //Invalid topic
+        else cout << "Error: Choose one number of the Main Menu.\n";
     }
 }
 
+//Return to main menu function
 void Menu::goBack() {
     cout << "\n[1]> Back to Main Menu.\n"
             "[0]> Quit.\n";
 
+    //Select a topic in back menu
     int back;
     string striBack;
     while (true) {
